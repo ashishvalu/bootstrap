@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap-4.3.1/css/bootstrap-grid.min.css" >
+    <link rel="stylesheet" href="style.css" >
+    <title>wrok ....</title>
+  </head>
+  <body>
+    <div class=" container ">
+     <div class="row">
+      <div class="col-md-6 ">
+      <div class="">
+      <h2>Text</h2>
+      <input id="demo"type="text" value="">
+      <h2 class="color-red">Time</h2>
+      <input id="color"type="text" value="">
+      <h2>css</h2>
+      <input id="mybtn" type="text" value="">
+      <br><br>
+      <button type="button"class="btn btn-outline-primary m-1" name="button">Generate</button>
+  </div>
+  </div>
+  <div class="col-md-6 card">
+    <div class=" ">
+      <div class="card-body">
+    <div id="tt" > </div>
+   </div>
+  </div>
+  </div>
+  <script>
+
+  $(document).ready(function(){
+  $("button").click(function(){
+    var a = $("#demo").val();
+    var b = Number($("#color").val());
+    var c = $("#mybtn").val();
+
+    for (var i = 1; i <= b; i++) {
+   $("#tt").append('<p class="card bg-info">' + a + '</p>').attr('style',c)
+ }
+    });
+  });
+  </script>
+  </body>
+</html>
